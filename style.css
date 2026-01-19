@@ -564,7 +564,7 @@ width: 100%;
     margin-top: 25px;
 }
 
-.membership-badge, .btn-badge {
+.btn-badge {
     display: inline-flex;
     align-items: center;
     justify-content: center;
@@ -577,21 +577,16 @@ width: 100%;
     white-space: nowrap;
 }
 
-.membership-badge {
-    background: #2d2d32; 
-    color: #fff; 
-    border: 1px solid rgba(255, 140, 0, 0.3);
-}
 
 .btn-badge {
-    background: #FF8C00; /* Changed to orange to pop more */
+    background: #2d2d32; /* Changed to orange to pop more */
     color: #fff; 
     border: none;
     cursor: pointer;
 }
 
 .btn-badge:hover {
-    background: #2d2d32;
+    background: #FF8C00;
 }
 
 .mentorship-flyer {
@@ -640,32 +635,30 @@ width: 100%;
 ========================== */
 @media (max-width: 768px) {
     .mentorship-section {
-        padding: 60px 5%; /* Matches the padding of other sections */
+        padding: 60px 5%; 
     }
 
     .mentorship-flex {
-        flex-direction: column; /* Stacks flyer above text */
+        flex-direction: column; 
         text-align: center;
         gap: 40px;
     }
 
     .mentorship-flyer {
-        order: -1; /* Puts the flyer at the top for visual impact */
+        order: -1; 
     }
 
-.mentorship-actions {
-        flex-direction: column; /* Stack them vertically for a cleaner look on phones */
-        align-items: center;
-        gap: 12px; /* This creates the space between the joined buttons */
+    .mentorship-actions {
+        justify-content: center; 
     }
 
     .membership-badge, .btn-badge {
-        width: 90%; /* Makes them consistent size on mobile */
-        max-width: 300px;
+        width: auto; 
+        font-size: 13px;
     }
 
     .flyer-card {
-        transform: rotate(0deg); /* Removes tilt on mobile for cleaner look */
+        transform: rotate(0deg); 
         max-width: 100%;
     }
 }
@@ -674,7 +667,7 @@ width: 100%;
    CONTACT SECTION
 ========================== */
 .contact-section {
-    padding: 80px 5%; /* Aligned with Header and Hero */
+    padding: 80px 5%; 
     background-color: #ffffff;
 }
 
@@ -706,7 +699,7 @@ width: 100%;
     font-size: 18px;
     color: #2d2d32; 
     font-weight: 600;
-    word-wrap: break-word; /* Prevents long emails from overflowing on mobile */
+    word-wrap: break-word; 
 }
 
 /* Social Links */
@@ -788,17 +781,17 @@ width: 100%;
     }
 
     .contact-wrapper {
-        grid-template-columns: 1fr; /* Stacks info above the form */
+        grid-template-columns: 1fr; 
         gap: 40px;
         text-align: center;
     }
 
     .contact-info {
-        align-items: center; /* Centers social icons and text */
+        align-items: center; 
     }
 
     .info-item p {
-        font-size: 16px; /* Slightly smaller for narrow screens */
+        font-size: 16px; 
     }
 
     .social-links-contact {
@@ -806,14 +799,14 @@ width: 100%;
     }
 
     .btn-submit {
-        align-self: center; /* Centers button on mobile */
-        width: 100%; /* Full width button for easier tapping */
+        align-self: center; 
+        width: 100%;
         max-width: 300px;
     }
 
     .form-group input, 
     .form-group textarea {
-        padding: 15px; /* Compact padding for smaller screens */
+        padding: 15px; 
     }
 }
 
@@ -823,12 +816,11 @@ width: 100%;
 .footer {
     background: #2d2d32;
     color: #ffffff;
-    padding: 60px 5% 30px; /* Aligned with Header/Hero/Sections */
+    padding: 60px 5% 30px; 
 }
 
 .footer-container {
     display: grid;
-    /* Flexible grid: 2fr for brand, 1fr for others on desktop */
     grid-template-columns: 2fr repeat(2, 1fr); 
     gap: 40px;
     margin-bottom: 40px;
@@ -899,25 +891,25 @@ width: 100%;
 @media (max-width: 768px) {
     .footer {
         padding: 50px 5% 20px;
-        text-align: center; /* Center-align for mobile professional look */
+        text-align: center; 
     }
 
     .footer-container {
-        grid-template-columns: 1fr; /* Single column stack */
+        grid-template-columns: 1fr; 
         gap: 40px;
     }
 
     .footer-brand p {
-        margin: 0 auto; /* Center the paragraph text */
+        margin: 0 auto; 
     }
 
     .footer-column h4::after {
         left: 50%;
-        transform: translateX(-50%); /* Center the orange underline */
+        transform: translateX(-50%); 
     }
 
     .footer-links a:hover {
-        transform: translateY(-3px); /* Different hover effect for mobile */
+        transform: translateY(-3px); 
     }
 }
 
@@ -925,7 +917,7 @@ width: 100%;
    BACK TO TOP BUTTON
 ========================== */
 #backToTop {
-    display: none; /* Hidden by default */
+    display: none;
     position: fixed;
     bottom: 30px;
     right: 30px;
