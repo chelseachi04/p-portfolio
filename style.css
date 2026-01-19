@@ -653,13 +653,15 @@ width: 100%;
         order: -1; /* Puts the flyer at the top for visual impact */
     }
 
-    .mentorship-actions {
-        justify-content: center; /* Centers the badge and button on mobile */
+.mentorship-actions {
+        flex-direction: column; /* Stack them vertically for a cleaner look on phones */
+        align-items: center;
+        gap: 12px; /* This creates the space between the joined buttons */
     }
 
     .membership-badge, .btn-badge {
-        width: auto; /* Prevents full-width stretching seen in your screenshot */
-        font-size: 13px;
+        width: 90%; /* Makes them consistent size on mobile */
+        max-width: 300px;
     }
 
     .flyer-card {
